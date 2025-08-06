@@ -2,6 +2,12 @@
 
 Dividend Portfolio Tracker
 
+## Installation
+
+```
+pip install -r requirements.txt
+```
+
 ## Implementation Plan
 
 1. **Project setup**
