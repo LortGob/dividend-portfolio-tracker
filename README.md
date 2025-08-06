@@ -13,6 +13,45 @@ Dividend Portfolio Tracker
 | Streamlit | Build a simple web dashboard | Choose **Streamlit** or **FastAPI**, not both |
 | matplotlib / plotly | Visualize portfolio performance | Optional |
 | typer / click | Build CLI helpers | Optional |
+=======
+
+## Installation
+
+```
+pip install -r requirements.txt
+```
+
+## Command-line interface
+
+The project uses [Typer](https://typer.tiangolo.com/) to build its CLI. Typer
+leverages Python type hints to parse arguments, generate `--help` output, and
+provide shell completion out of the box.
+
+### Example: CSV import
+
+A CSV import command can be defined with `@app.command()`:
+
+```python
+import typer
+from pathlib import Path
+
+app = typer.Typer()
+
+@app.command()
+def import_csv(file: Path):
+    """Import broker transactions from a CSV file."""
+    ...
+```
+
+Users run the command with:
+
+```bash
+python -m portfolio import-csv transactions.csv
+```
+
+Typer handles argument parsing and validation for `file`, automatically
+displaying helpful error messages and usage information.
+
 
 ## Implementation Plan
 
