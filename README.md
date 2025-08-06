@@ -2,10 +2,22 @@
 
 Dividend Portfolio Tracker
 
+## Dependencies
+
+| Dependency | Purpose | Notes |
+|------------|---------|-------|
+| pandas | Data manipulation and analysis | Required |
+| yfinance | Retrieve market and dividend data | Required |
+| SQLAlchemy | ORM for SQLite database | Required |
+| FastAPI | Expose a REST API | Choose **FastAPI** or **Streamlit**, not both |
+| Streamlit | Build a simple web dashboard | Choose **Streamlit** or **FastAPI**, not both |
+| matplotlib / plotly | Visualize portfolio performance | Optional |
+| typer / click | Build CLI helpers | Optional |
+
 ## Implementation Plan
 
 1. **Project setup**
-   - Create a Python virtual environment and install dependencies (`pandas`, `yfinance`, `SQLAlchemy`, `fastapi` or `streamlit`, `matplotlib/plotly`).
+   - Create a Python virtual environment and install dependencies (see [Dependencies](#dependencies)). Pick **FastAPI** for an API or **Streamlit** for a web dashboard. Visualization libraries and CLI helpers are optional.
    - Initialize a package structure with models, services, importers, and a UI or API layer.
 
 2. **Data model & storage**
