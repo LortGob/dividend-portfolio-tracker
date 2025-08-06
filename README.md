@@ -9,8 +9,7 @@ Dividend Portfolio Tracker
 | pandas | Data manipulation and analysis | Required |
 | yfinance | Retrieve market and dividend data | Required |
 | SQLAlchemy | ORM for SQLite database | Required |
-| FastAPI | Expose a REST API | Choose **FastAPI** or **Streamlit**, not both |
-| Streamlit | Build a simple web dashboard | Choose **Streamlit** or **FastAPI**, not both |
+| FastAPI | Expose a REST API | Chosen |
 | matplotlib / plotly | Visualize portfolio performance | Optional |
 | typer / click | Build CLI helpers | Optional |
 =======
