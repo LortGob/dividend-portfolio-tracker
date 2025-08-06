@@ -2,6 +2,13 @@
 
 Dividend Portfolio Tracker
 
+## Installation
+
+```
+pip install -r requirements.txt
+```
+
+
 ## Command-line interface
 
 The project uses [Typer](https://typer.tiangolo.com/) to build its CLI. Typer
